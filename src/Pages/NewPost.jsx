@@ -19,7 +19,7 @@ const NewPost = () => {
       };
 
       // Use the full backend URL so React dev server doesn’t intercept
-      const res = await fetch("http://localhost:8000/api/posts", {
+      const res = await fetch("https://blogging-website-backened-8ds8.vercel.app/api/posts", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
