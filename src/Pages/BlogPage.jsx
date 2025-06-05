@@ -16,7 +16,7 @@ const BlogPage = () => {
     // Fetch the single post by ID from your server.
     // Adjust the URL if needed (e.g. include auth headers, etc.).
     setLoading(true);
-    fetch(`http://localhost:8000/api/posts/${id}`)
+    fetch(`https://blogging-website-backened-8ds8.vercel.app/api/posts/${id}`)
       .then((res) => {
         if (!res.ok) {
           throw new Error(`Server responded with ${res.status}`);
