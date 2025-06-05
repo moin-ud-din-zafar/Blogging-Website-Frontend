@@ -10,7 +10,7 @@ const ProfilePage = () => {
   const token = localStorage.getItem("token");
 
   // Ensure axios points to your backend
-  axios.defaults.baseURL = "http://localhost:8000";
+  axios.defaults.baseURL = "https://blogging-website-backened-8ds8.vercel.app";
 
   useEffect(() => {
     if (!token) {
