@@ -13,7 +13,7 @@ const Fashion = () => {
   useEffect(() => {
     const fetchFashionPosts = async () => {
       try {
-        const res = await fetch("http://localhost:8000/api/posts");
+        const res = await fetch("https://blogging-website-backened-8ds8.vercel.app/api/posts");
         if (!res.ok) {
           throw new Error(`Server responded with ${res.status}`);
         }
